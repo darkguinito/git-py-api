@@ -7,3 +7,4 @@ home_page = Blueprint('home_page', __name__)
 def home():
   print("Toto")
   return jsonify(None)
+  
