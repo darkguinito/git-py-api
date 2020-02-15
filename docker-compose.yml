@@ -1,0 +1,19 @@
+version: '3.2'
+
+services:
+
+  py-api:
+    container_name: "py-api_cont"
+    build: .
+    hostname: "py-api"
+    volumes:
+      - $PWD:/usr/src/app
+    networks:
+      - backend
+    ports:
+      - 5000:5000
+
+
+networks:
+  backend:
+
